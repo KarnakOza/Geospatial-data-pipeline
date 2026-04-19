@@ -42,3 +42,13 @@ python pipeline.py
 * Integrate SAR datasets (Sentinel-1)
 * Add automation using cron jobs
 * Build dashboard for visualization
+
+## Goal:
+Build an end-to-end geospatial pipeline to assess location-based risk using spatial data.
+
+Use Case:
+Identify which assets (point/regions) fall within high-risk zones (e.g., flood prone areas).
+
+Output:
+A dataset showing assets with associated risk levels.
+
