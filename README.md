@@ -4,6 +4,7 @@
 
 This project implements an end-to-end geospatial data pipeline for ingesting, processing, storing, and analyzing spatial datasets.
 
+![image alt](https://github.com/KarnakOza/Geospatial-data-pipeline/blob/3962017ab3dfd620391a1f6317a0e47514bb1da3/scripts/S1A_IW_GRDH_1SDV_20260418T011833_20260418T011858_064127_08120D_3D80.jpg)
 ## Tech Stack
 
 * PostgreSQL + PostGIS
