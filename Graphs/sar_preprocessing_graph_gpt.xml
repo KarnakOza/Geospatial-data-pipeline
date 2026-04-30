@@ -5,7 +5,7 @@
     <sources/>
     <parameters class="com.bc.ceres.binding.dom.XppDomElement">
       <useAdvancedOptions>false</useAdvancedOptions>
-      <file>H:\GEOSPATIAL_PIPELINE\raw_sar\S1A_IW_GRDH_1SDV_20251231T011836_20251231T011901_062552_07D6E5_F5D8.zip</file>
+      <file>{input}</file>
       <copyMetadata>true</copyMetadata>
       <bandNames/>
       <pixelRegion>0,0,25770,16718</pixelRegion>
@@ -19,7 +19,7 @@
     </sources>
     <parameters class="com.bc.ceres.binding.dom.XppDomElement">
       <selectedPolarisations/>
-      <borderLimit>500</borderLimit>
+      <borderLimit>200</borderLimit>
       <trimThreshold>0.5</trimThreshold>
     </parameters>
   </node>
@@ -52,14 +52,14 @@
       <sourceProduct refid="ThermalNoiseRemoval"/>
     </sources>
     <parameters class="com.bc.ceres.binding.dom.XppDomElement">
-      <sourceBands/>
+      <sourceBands>Sigma0_VV,Sigma0_VH</sourceBands>
       <auxFile>Product Auxiliary File</auxFile>
       <externalAuxFile/>
       <outputImageInComplex>false</outputImageInComplex>
-      <outputImageScaleInDb>false</outputImageScaleInDb>
+      <outputImageScaleInDb>true</outputImageScaleInDb>
       <createGammaBand>false</createGammaBand>
       <createBetaBand>false</createBetaBand>
-      <selectedPolarisations/>
+      <selectedPolarisations>VV,VH</selectedPolarisations>
       <outputSigmaBand>true</outputSigmaBand>
       <outputGammaBand>true</outputGammaBand>
       <outputBetaBand>false</outputBetaBand>
@@ -72,7 +72,7 @@
     </sources>
     <parameters class="com.bc.ceres.binding.dom.XppDomElement">
       <sourceBands/>
-      <filter>Lee</filter>
+      <filter>Refined Lee</filter>
       <filterSizeX>5</filterSizeX>
       <filterSizeY>5</filterSizeY>
       <dampingFactor>2</dampingFactor>
@@ -123,18 +123,18 @@
       <alignToStandardGrid>false</alignToStandardGrid>
       <standardGridOriginX>0.0</standardGridOriginX>
       <standardGridOriginY>0.0</standardGridOriginY>
-      <nodataValueAtSea>true</nodataValueAtSea>
+      <nodataValueAtSea>false</nodataValueAtSea>
       <saveDEM>false</saveDEM>
       <saveLatLon>false</saveLatLon>
       <saveIncidenceAngleFromEllipsoid>false</saveIncidenceAngleFromEllipsoid>
       <saveLocalIncidenceAngle>false</saveLocalIncidenceAngle>
-      <saveProjectedLocalIncidenceAngle>false</saveProjectedLocalIncidenceAngle>
+      <saveProjectedLocalIncidenceAngle>true</saveProjectedLocalIncidenceAngle>
       <saveSelectedSourceBand>true</saveSelectedSourceBand>
       <saveLayoverShadowMask>false</saveLayoverShadowMask>
       <outputComplex>false</outputComplex>
       <applyRadiometricNormalization>false</applyRadiometricNormalization>
       <saveSigmaNought>false</saveSigmaNought>
-      <saveGammaNought>false</saveGammaNought>
+      <saveGammaNought>true</saveGammaNought>
       <saveBetaNought>false</saveBetaNought>
       <incidenceAngleForSigma0>Use projected local incidence angle from DEM</incidenceAngleForSigma0>
       <incidenceAngleForGamma0>Use projected local incidence angle from DEM</incidenceAngleForGamma0>
@@ -148,7 +148,7 @@
       <sourceProduct refid="Terrain-Correction"/>
     </sources>
     <parameters class="com.bc.ceres.binding.dom.XppDomElement">
-      <file>C:\Users\Lenovo\S1A_IW_GRDH_1SDV_20251231T011836_20251231T011901_062552_07D6E5_F5D8_Orb_NR_Cal_Spk_TC.tif</file>
+      <file>{output}</file>
       <formatName>GeoTIFF</formatName>
     </parameters>
   </node>
