@@ -3,6 +3,14 @@
 ## Overview
 
 This project implements an end-to-end geospatial data pipeline for ingesting, processing, storing, and analyzing spatial datasets.
+## Goal:
+Build an end-to-end geospatial pipeline to assess location-based risk using spatial data.
+
+Use Case:
+Identify which assets (point/regions) fall within high-risk zones (e.g., flood prone areas).
+
+Output:
+A dataset showing assets with associated risk levels
 
 ![image alt](https://github.com/KarnakOza/Geospatial-data-pipeline/blob/3962017ab3dfd620391a1f6317a0e47514bb1da3/scripts/S1A_IW_GRDH_1SDV_20260418T011833_20260418T011858_064127_08120D_3D80.jpg)
 ## Tech Stack
@@ -44,12 +52,5 @@ python pipeline.py
 * Add automation using cron jobs
 * Build dashboard for visualization
 
-## Goal:
-Build an end-to-end geospatial pipeline to assess location-based risk using spatial data.
-
-Use Case:
-Identify which assets (point/regions) fall within high-risk zones (e.g., flood prone areas).
-
-Output:
-A dataset showing assets with associated risk levels.
+.
 
